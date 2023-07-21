@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu{
+    @apply pl-5 lg:p-0 font-semibold;
+  
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex-basis: 25%;
+    max-width: 100%;
+}
