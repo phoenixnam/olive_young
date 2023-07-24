@@ -477,7 +477,20 @@
 //   console.log(e.target.checked)
 // }
 
-var inputE = document.querySelector('select');
-inputE.onchange = function(e){
-  console.log(e.target.value)
+// var inputE = document.querySelector('select');
+// inputE.onchange = function(e){
+//   console.log(e.target.value)
+// }
+
+var intE = document.querySelector('[type="text"]');
+intE.onkeyup = function(e){
+  console.log(e.which)
+  switch(e.which){
+    case 9: 
+    console.log('Tab');
+    break;
+    case 27:
+      console.log('Exit')
+      break;
+  }
 }
