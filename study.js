@@ -467,7 +467,12 @@
 // })
 
 
-var inputE = document.querySelector('[type="text"]');
+// var inputE = document.querySelector('[type="text"]');
+// inputE.oninput = function(e){
+//   console.log(e.target)
+// }
+
+var inputE = document.querySelector('[type="checkbox"]');
 inputE.oninput = function(e){
-  console.log(e.target)
+  console.log(e.target.checked)
 }
