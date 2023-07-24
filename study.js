@@ -468,11 +468,16 @@
 
 
 // var inputE = document.querySelector('[type="text"]');
-// inputE.oninput = function(e){
+// inputE.onchange = function(e){
 //   console.log(e.target)
 // }
 
-var inputE = document.querySelector('[type="checkbox"]');
-inputE.oninput = function(e){
-  console.log(e.target.checked)
+// var inputE = document.querySelector('[type="checkbox"]');
+// inputE.oninput = function(e){
+//   console.log(e.target.checked)
+// }
+
+var inputE = document.querySelector('select');
+inputE.onchange = function(e){
+  console.log(e.target.value)
 }
