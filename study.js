@@ -482,15 +482,36 @@
 //   console.log(e.target.value)
 // }
 
-var intE = document.querySelector('[type="text"]');
-intE.onkeyup = function(e){
-  console.log(e.which)
-  switch(e.which){
-    case 9: 
-    console.log('Tab');
-    break;
-    case 27:
-      console.log('Exit')
-      break;
-  }
+// var intE = document.querySelector('[type="text"]');
+// intE.onkeyup = function(e){
+//   console.log(e.which)
+//   switch(e.which){
+//     case 9: 
+//     console.log('Tab');
+//     break;
+//     case 27:
+//       console.log('Exit')
+//       break;
+//   }
+// }
+
+// var aElements = document.links;
+
+//   for(var i =0; i< aElements.length; i++){
+//     aElements[i].onclick = function(e){
+//     if (!e.target.href.startWith("https://translate.google.com/?hl=vi")) 
+//     //khi k chứa url: gg dịch thì ngăn chặn cái mặc định
+//     {
+//       e.preventDefault()
+//     }
+//   }
+// }
+
+var ulElement = document.querySelector('ul')
+ulElement.onmousedown = function(e){
+  e.preventDefault();
+}
+ulElement.onclick =
+function(e){
+  console.log(e.target)
 }
