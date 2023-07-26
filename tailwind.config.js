@@ -16,7 +16,8 @@ module.exports = {
         'price': '#f27370',
         'footer': '#666',
         'coffee-200': '#C89F94',
-        'coffee-400': '#A25F4B'
+        'coffee-400': '#A25F4B',
+        'coffe-600': '#744838'
       }
     
     },
