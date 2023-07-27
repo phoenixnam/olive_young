@@ -271,7 +271,25 @@
     </footer> -->
     </div>
     <div class="root">
-        <header></header>
+        <header class="py-6 mx-10">
+            <div class="flex flex-row justify-between items-center">
+                <ul class=" order-1 logo basis-2/5 text-center font-semibold cursor-pointer justify-end">CoffeeStyle.</ul>
+                <ul id="menu" class="basis-2/5 flex-col flex md:flex-row gap-x-7 justify-end order-3 invisible bg-white text-gray-500">
+                    <li><a href=""> HOME </a></li>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href=""> BLOG</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="">STYLEGUIDE</a></li>
+                </ul>
+                <ul id="menu-btn" class="md:hidden order-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  </ul>
+                <ul class="basis-1/5 order-2">Cart</ul>
+            </div>
+        </header>
         <main class="p-2">
             <div class="mr-2 ml-2 mt-6">
                 <div class="relative">
@@ -297,18 +315,15 @@
                     </ul>
                     <div class="absolute px-5 flex h-full w-full top-0 left-0">
                         <div class="my-auto w-full flex justify-between">
-                            <button onclick="prev()" class="bg-transparent rounded-full bg-white p-3 duration-0 opacity-95">
+                            <button onclick="prev()" class="bg-transparent rounded-full bg-gray-300 p-3 duration-0 opacity-95">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M15 19l-7-7 7-7"></path>
                                 </svg>
                             </button>
-                            
-                            
-                            
 
-                            <button onclick="next()" class="bg-white p-3 rounded-full opacity-95">
+                            <button onclick="next()" class="bg-white p-3 rounded-full opacity-95 bg-gray-300 ">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -320,7 +335,22 @@
                 </div>
             </div>
             <!-- Our coffee story -->
-            <div class="container"></div>
+            <div class=" mt-6">
+                <div class="story flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-4 w-[95%] lg:w-[65%] mx-auto">
+                    <div class="basis-1/2">
+                      <video autoplay="" loop="" muted="" class="w-full h-1/2 object-cover">
+                        <source class="h-9" src="./Phuong_ggMienTrung.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="basis-1/2 text-center lg:text-left lg:pl-6">
+                      <div class="text-3xl leading-10 mb-6 font-">What is your most special coffee?</div>
+                      <div class="text-gray-500 leading-7 mb-6">The French Press is a brewing method that comes closest to cupping. Cupping is the prescribed method by which coffee should be judged. Nothing separates the water from the coffee. To properly discover the flavours, it is best to drink the coffee this way. Everyone has their favourite brewing method.</div>
+                      <div class="">
+                        <a href="#" class="text-coffee-400 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:bg-coffee-50 hover:after:bg-coffee-200 after:h-0.5 after:w-full after:transition-all after:ease-in-out after:duration-400">Read the full Story</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
             <!-- FEATURED MUGS -->
             <div class="w-[65%] mx-auto ">
                 <div class="flex justify-center mb-3 mt-4">
@@ -378,6 +408,7 @@
                 </div>
             </div>
             <div>
+                
                 <div class="flex justify-center mb-3 mt-12">
                     <div class="w-8 h-px bg-gray-400 mt-3"></div>
                     <div class="text-gray-400 ml-2 w-22 text-center uppercase">more product </div>
@@ -634,7 +665,7 @@
                 <br>
                 <div class="flex flex-col md:flex-row md:mx-auto justify-center mb-6 mt-auto">
                     <input type="text" name="" id=""
-                        class="bg-gray-900 md:px-6 md:py-3 p-3 mr-2 ml-2 mt-2 placeholder:uppercase border hover:border-gray-300"
+                        class="bg-gray-900 md:px-6 md:py-3 p-3 mr-2 ml-2 mt-2 text-gray-50 placeholder:uppercase border hover:border-gray-300"
                         placeholder="phuongnguyen@gmail.com">
                     <button
                         class="bg-white font-semibold w-32 md:px-4 md:py-3 p-0 px-1 py-3 ml-auto mr-auto md:ml-4 mt-2.5 border border-gray-700 mx-auto hover:border-white text-gray-900">Subscribe</button>

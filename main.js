@@ -165,3 +165,11 @@ function showSlide() {
 setInterval(() => {
   next();
 }, 5000);
+
+
+var menuElement = document.getElementById('menu');
+var menuButton = document.getElementById('menu-btn');
+
+menuButton.addEventListener('click', ()=>{
+  menu.classList.toggle('invisible')
+})
