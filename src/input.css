@@ -21,3 +21,36 @@
     flex-basis: 25%;
     max-width: 100%;
 }
+
+.tqd-parallax {
+    height: 500px; /* Adjust this value to control the parallax effect */
+    overflow: hidden;
+  }
+  
+  .tqd-parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./src/img/coffee.webp');
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(0); 
+    z-index: -1; 
+  }
+  
+
+  .tqd-parallax-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: scale(1.2); 
+    z-index: -1; 
+  }
+  
+  
