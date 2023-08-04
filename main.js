@@ -175,9 +175,4 @@ menuButton.addEventListener('click', ()=>{
 })
 
 
-  window.addEventListener('scroll', function() {
-    const parallaxImage = document.querySelector('.tqd-parallax-image');
-    const scrollValue = window.scrollY;
-    parallaxImage.style.transform = `translateY(${scrollValue * 0.5}px)`;
-  });
 
